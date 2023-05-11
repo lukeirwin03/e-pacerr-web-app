@@ -1,0 +1,7 @@
+/* ----- Footer Components ----- */
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    background-color: var(--primary-white);
+  }

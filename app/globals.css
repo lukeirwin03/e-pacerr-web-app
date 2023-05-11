@@ -2,26 +2,444 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'global-styles/Header.css';
+@import 'global-styles/Footer.css';
+@import 'global-styles/Sidenav.css';
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-black: #222831;
+  --primary-white: #fff9f9;
+  --primary-accent: #7c0047;
+  --secondary-accent: #CD5888;
+
+  --primary-heading: 48pt;
+  --secondary-heading: 24pt;
+  --tertiary-heading: 18pt;
+  --text-size: 14pt;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* ----- Global Components ----- */
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  font-size: var(--text-size);
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+}
+
+body.side-nav-open {
+  margin-left: 200px;
+}
+
+.content{
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1500px;
+  font-size: var(--text-size);
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+
+}
+
+/* ----- Landing Page Components ----- */
+.landingPageHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: 
+  linear-gradient(
+    rgba(35, 33, 33, 0.45), 
+    rgba(35, 0, 0, 0.45)
+  ), url(https://media.istockphoto.com/id/700688348/photo/interpreting-data-is-what-he-does-best.jpg?s=612x612&w=0&k=20&c=y1fVtELP6lZHdkt8do4RtdBgx5HMTTotD7jxZ1oO_go=);
+  background-color: var(--primary-accent);
+  color: var(--primary-white);
+  background-size: cover;
+  height: 30rem;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 6rem;
+}
+
+.logoImage{
+  height: 8rem;
+  width: 30rem;
+  filter: invert(1);
+}
+
+.landingPrimaryHeader{
+  font-size: var(--primary-heading);
+  margin-bottom: 1rem;
+}
+
+.landingSecondaryHeader{
+  font-size: var(--secondary-heading);
+  color: var(--primary-white);
+  text-align: center;
+}
+
+.paragraph{
+  font-size: var(--text-size);
+  text-align: left;
+  white-space: normal;;
+}
+
+.learnMore{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 10rem auto;
+  max-width: 1500px;
+}
+
+.item{
+  display: flex;
+  border-color: var(--primary-accent);
+
+  height: 16rem;
+  width: 32rem;
+  padding: 4px;
+}
+
+.thumbnailContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-right: 20px;
+  background-color: var(--primary-accent);
+}
+
+.thumbnail{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemContent{
+  width: 45%;
+  margin: 8px 8px 8px 0px;
+  font-size: var(--text-size)
+}
+
+.contentHeader{
+  font-size: var(--tertiary-heading);
+  color: var(--primary-black);
+  font-weight: 700;
+}
+
+.signUpBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.signUpBlockHeader{
+  font-weight: 600;
+  color: var(--primary-accent);
+  margin-bottom: 1rem;
+}
+
+.signUpBlockContent{
+  font-size: var(--text-size)
+}
+
+.buttonTest{
+  background-color: var(--primary-accent);
+  color: var(--primary-white);
+  width: 8rem;
+  height: 2rem;
+  margin: 1rem;  
+  border-radius: 8px;
+}
+
+.buttonTest:hover{
+  background-color: var(--secondary-accent);
+}
+
+/* ----- Info Page ----- */
+.infoContainer{
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-size: var(--text-size);
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: var(--primary-white);
+}
+
+.section{
+  margin-bottom: 4rem;
+  margin: 0px auto;
+  width: 100%;
+  text-align: left;
+}
+
+.sectionHeader{
+  font-size: var(--tertiary-heading);
+  color: var(--primary-accent);
+  font-weight: 600;
+  margin-bottom: 15px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.section .subheading{
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section .text{
+  font-size: var(--text-size);
+  margin-bottom: 1rem;
+}
+
+.text ul{
+  padding-right: 24px;
+}
+
+.text li{
+  margin-bottom: 4px;
+}
+
+.section .fullImage{
+  background-color: var(--primary-accent);
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.section .imageCaption{
+  font-size: 11pt;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section .thumbnails{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+.section .thumbnail{
+  height: 16rem;
+  width: 16rem;
+  background-color: var(--primary-accent);
+  
+}
+
+.section .temp{
+  background-color: var(--primary-white);
+  padding: 4px;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.member{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member .photo{
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.member .name{
+  margin-top: 4px;
+}
+
+.member .role{
+  font-size: 11pt;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0px auto;
+  background-color: #f8e8ee;
+}
+
+.banner .text{
+  text-align: center;
+}
+
+.section .faqLinks{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  color: var(--primary-accent);
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.link{
+  color: var(--primary-accent);
+  margin-top: .75rem;
+}
+
+.question{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.question .subheading{
+  margin-bottom: .25rem;
+}
+
+/* ----- Loading Page Components ----- */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 15px solid rgba(0, 0, 0, 0.1);
+  border-left-color: var(--secondary-accent);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 1s linear infinite;
+}
+
+/* ----- MISC ----- */
+/* .btn {
+  display: inline-block;
+  background-color: var(--primary-accent);
+  color: var(--secondary-accent);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: var(--text-size);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--primary-accent);
+  color: var(--secondary-accent);
+} */
+
+.btn-back {
+  display: inline-block;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 1.3rem;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 0.8rem;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 0.7rem 1rem;
+  margin-left: 0.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0058b7;
+}
+
+.search-input:focus,
+.search-button:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem;
+
+  background-color: #fff;
+  color: #333;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.card .card-content {
+  margin-top: 1rem;
+}
+
+.card .card-stats {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.card .card-stat {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.card .card-stat svg {
+  margin-right: 0.5rem;
+}
+
+.card .card-stat span {
+  font-size: 0.9rem;
+}
+
+.courses .card h2 {
+  margin-bottom: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
