@@ -34,7 +34,7 @@ const EnrollPage = () => {
           <div className="imageCaption">A caption for the photo</div>
         </div>
 
-        <div className="section">
+        {/* <div className="section">
           <h6 className="subheading">Where we are today</h6>
           <div className="text">
             What has your team accomplished? What are you most proud of? Tell
@@ -42,7 +42,7 @@ const EnrollPage = () => {
           </div>
 
           <div className="thumbnails">
-            <div className="temp">
+            <div className="organizer">
               <Image
                 className="thumbnail"
                 src={stock1}
@@ -52,7 +52,7 @@ const EnrollPage = () => {
                 Caption for recent accomplishment
               </div>
             </div>
-            <div className="temp">
+            <div className="organizer">
               <Image
                 className="thumbnail"
                 src={stock1}
@@ -62,8 +62,8 @@ const EnrollPage = () => {
                 Caption for recent accomplishment
               </div>
             </div>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
       </div>
     </div>
   );

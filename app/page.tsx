@@ -1,19 +1,17 @@
 import styles from "./page.module.css";
-
 import Image from "next/image";
-import logoPic from "../e-pacerr-logo-banner-transparent.png";
+import logoPic from "../e-pacerr_logo_negative.png";
 import stock1 from "../stockImage1.png";
 import stock2 from "../stockImage2.png";
 import stock3 from "../stockImage3.png";
 import stock4 from "../stockImage4.png";
-import "bootstrap/dist/css/bootstrap.css";
 
 const HomePage = () => {
+
   return (
     <div className="content">
       <div className="landingPageHeader">
         <Image className='logoImage' src={logoPic} alt='E-PACERR Logo'></Image>
-        <br></br>
         <div className="landingSecondaryHeader">
           <b><u>E</u></b>nhancing{" "}
           <b><u>P</u></b>rofessionalism,{" "}

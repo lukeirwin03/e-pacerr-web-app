@@ -103,7 +103,7 @@ const TeamPage = () => {
           <br></br>
           <h6 className="subheading">Join the Team</h6>
           <div className="text">
-            Write a brief description of what you're looking for in a teammate.
+            Interested in being a part of the team that makes this program possible?
           </div>
           <a href="https://www.google.com/" target="_blank">
             <button className="buttonTest">Apply Now</button>

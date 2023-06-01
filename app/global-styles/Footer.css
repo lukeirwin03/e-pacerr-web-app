@@ -1,7 +1,228 @@
 /* ----- Footer Components ----- */
 .footer{
     display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    background-color: var(--primary-accent);
+    padding: 2rem 5rem 2rem 5rem;
+    height: 40rem;
+    position: relative;
+  }
+
+  @media only screen and (min-width: 1175px){
+    .row{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .logoContainer{
+      margin-bottom: 2rem;
+    }
+
+    .footer .left{
+      text-align: left;
+      font-size: var(--secondary-heading);
+      color: var(--primary-white);
+    }
+
+    .column{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      height: 100%;
+      width: 33%;
+    }
+
+    .footer .middle{
+      text-align: right;
+    }
+  
+    .footer .right{
+      text-align: right;
+    }
+
+    .columnHeader{
+      font-size: var(--secondary-heading);
+      color: var(--primary-white);
+      margin-bottom: 1rem;
+    }
+  
+    .footer li{
+      margin-bottom: .25rem;
+    }
+  
+    .footerLink{
+      color: var(--primary-white);
+      text-decoration: none;
+      font-size: var(--tertiary-heading);
+    }
+
+  /* ----- Social Media Icons ----- */
+    .fa {
+      color: var(--primary-white);
+      padding-left: 8px;
+    }
+
+    .fa-instagram{
+      scale: 125%;
+    }
+  
+    .fa-google{
+      scale: 125%;
+      margin: 0px auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 1174px){
+    .row{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .logoContainer{
+      display: flex;      
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+
+    .footer .middleRow{
+      width: 100%;
+      text-align: center;
+      font-size: var(--secondary-heading);
+      color: var(--primary-white);
+      margin-bottom: 1.5rem;
+    }
+
+    .column{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      height: 100%;
+    }
+
+    .footer .middle{
+      text-align: center;
+      width: 50%;
+    }
+  
+    .footer .right{
+      text-align: center;
+      width: 50%;
+    }
+
+    .columnHeader{
+      font-size: var(--secondary-heading);
+      color: var(--primary-white);
+      margin-bottom: 1rem;
+    }
+  
+    .footerLink{
+      color: var(--primary-white);
+      text-decoration: none;
+      font-size: var(--tertiary-heading);
+    }
+
+   /* ----- Social Media Icons ----- */
+    .fa {
+      color: var(--primary-white);
+      padding-left: 4px;
+    }
+
+    .fa-instagram{
+      scale: 100%;
+    }
+  
+    .fa-google{
+      scale: 100%;
+    }
+
+  }
+
+  @media only screen and (max-width: 700px){
+    .footer{
+      padding-right: 4rem;
+    }
+    .footer .middle{
+      text-align: center;
+      width: 40%;
+    }
+  
+    .footer .right{
+      text-align: center;
+      width: 60%;
+    }
+
+    .desc{
+      font-size: var(--tertiary-heading);
+    }
+    .columnHeader{
+      font-size: var(--tertiary-heading);
+      color: var(--primary-white);
+      margin-bottom: 1rem;
+    }
+  
+    .footerLink{
+      color: var(--primary-white);
+      text-decoration: none;
+      font-size: var(--text-size);
+    }
+
+  /* ----- Social Media Icons ----- */
+    .fa {
+      color: var(--primary-white);
+      padding-left: 2px;
+    }
+
+    .fa-instagram{
+      scale: 75%;
+    }
+  
+    .fa-google{
+      scale: 75%;
+    }
+  }
+  
+  .footer .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center 
+  }
+
+  .top{
+    justify-content: left;
+  }
+
+  .logo{
+    width: 20rem;
+  }
+  
+  .bottom {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 5rem;
-    background-color: var(--primary-white);
+    text-align: center;
+    color: var(--primary-white);
+    font-size: var(--text-size);
+  }
+
+  .columns{
+    margin: 0 6 2 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+  }
+
+  .footerLink:hover{
+    color: var(--primary-white);
+    text-decoration: wavy underline ;
   }

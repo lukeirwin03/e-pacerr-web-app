@@ -44,7 +44,7 @@
 }
 
 .link a:hover{
-  background-color: var(--secondary-accent);
+  background-color: var(--primary-accent);
   color: var(--primary-white);
 }
 
@@ -72,7 +72,6 @@
   width: 45px;
   height: 45px;
   background-image:url("https://cdn0.iconfinder.com/data/icons/user-interface-150/24/List_menu_toggle-512.png");
-  /* filter: invert(1); */
   background-size: cover;
 }
 

@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 @import 'global-styles/Header.css';
+@import 'global-styles/AnimatedHeader.css';
 @import 'global-styles/Footer.css';
 @import 'global-styles/Sidenav.css';
 
+
 :root {
-  --primary-black: #222831;
+  --primary-dark: #222831;
   --primary-white: #fff9f9;
   --primary-accent: #7c0047;
-  --secondary-accent: #CD5888;
+  --primary-complement: #1d64ef;
+  --secondary-accent: #AA4971;
+  --secondary-complement: #00C1FF;
 
   --primary-heading: 48pt;
   --secondary-heading: 24pt;
@@ -25,7 +29,7 @@ body {
   padding: 0;
   font-size: var(--text-size);
   background-color: var(--primary-white);
-  color: var(--primary-black);
+  color: var(--primary-dark);
 }
 
 body.side-nav-open {
@@ -34,7 +38,7 @@ body.side-nav-open {
 
 .content{
   background-color: var(--primary-white);
-  color: var(--primary-black);
+  color: var(--primary-dark);
 }
 
 .container {
@@ -46,7 +50,7 @@ body.side-nav-open {
   margin: 0 auto;
   padding: 0 1rem;
   background-color: var(--primary-white);
-  color: var(--primary-black);
+  color: var(--primary-dark);
 
 }
 
@@ -71,9 +75,7 @@ body.side-nav-open {
 }
 
 .logoImage{
-  height: 8rem;
-  width: 30rem;
-  filter: invert(1);
+  width: 28rem;
 }
 
 .landingPrimaryHeader{
@@ -134,7 +136,7 @@ body.side-nav-open {
 
 .contentHeader{
   font-size: var(--tertiary-heading);
-  color: var(--primary-black);
+  color: var(--primary-dark);
   font-weight: 700;
 }
 
@@ -171,7 +173,7 @@ body.side-nav-open {
   background-color: var(--secondary-accent);
 }
 
-/* ----- Info Page ----- */
+/* ----- Info Pages ----- */
 .infoContainer{
   width: 50rem;
   display: flex;
@@ -234,17 +236,17 @@ body.side-nav-open {
 .section .thumbnails{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   max-width: 100%;
 }
 
 .section .thumbnail{
   height: 16rem;
-  width: 16rem;
+  width: 26rem;
   background-color: var(--primary-accent);
-  
 }
 
-.section .temp{
+.section .organizer{
   background-color: var(--primary-white);
   padding: 4px;
 }
@@ -313,6 +315,93 @@ body.side-nav-open {
   margin-bottom: .25rem;
 }
 
+/* ----- Modules ----- */
+@media only screen and (min-width: 1000px){
+  .module {
+    display: flex;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    flex-direction: row;
+  }
+  
+  .moduleThumbnail {
+    min-width: 22rem;
+    height: 12.375rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #222831;
+  }
+
+  .left {
+    margin-right: .25rem;
+  }
+
+  .right {
+    margin-left: .25rem;
+  }
+
+  .even-module {
+    text-align: left;
+  }
+
+  .odd-module {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 999px){
+  .module {
+    display: flex;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .moduleThumbnail {
+    min-width: 22rem;
+    height: width/9;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #222831;
+  }
+
+  .left {
+    margin-right: .25rem;
+  }
+
+  .right {
+    margin-left: .25rem;
+  }
+
+  .even-module {
+    text-align: left;
+  }
+
+  .odd-module {
+    text-align: left;
+  }
+}
+
+.moduleContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.moduleTitle{
+  font-size: var(--secondary-heading);
+  color: var(--primary-accent);
+  font-weight: 600;
+}
+
+.moduleGoal{
+  font-size: var(--text-size);
+  color: #AA4971;
+}
+
+.moduleText{
+  font-size: var(--text-size);
+}
+
 /* ----- Loading Page Components ----- */
 .loader {
   display: flex;
@@ -322,124 +411,53 @@ body.side-nav-open {
 }
 
 .spinner {
-  border: 15px solid rgba(0, 0, 0, 0.1);
-  border-left-color: var(--secondary-accent);
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  animation: spin 1s linear infinite;
+  width: 100px;
+  height: 100px;
+  display: grid;
+}
+.spinner::before,
+.spinner::after {    
+  content:"";
+  grid-area: 1/1;
+  --c: radial-gradient(farthest-side,#766DF4 92%,#0000);
+  background: 
+    var(--c) 50%  0, 
+    var(--c) 50%  100%, 
+    var(--c) 100% 50%, 
+    var(--c) 0    50%;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  animation: s2 1s infinite;
+}
+.spinner::before {
+margin:8px;
+filter:hue-rotate(45deg);
+background-size: 16px 16px;
+animation-timing-function: linear
 }
 
-/* ----- MISC ----- */
-/* .btn {
-  display: inline-block;
-  background-color: var(--primary-accent);
-  color: var(--secondary-accent);
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
-  font-size: var(--text-size);
-  cursor: pointer;
-  text-decoration: none;
+@keyframes s2{ 
+100%{transform: rotate(.5turn)}
 }
 
-.btn:hover {
-  background-color: var(--primary-accent);
-  color: var(--secondary-accent);
-} */
-
-.btn-back {
-  display: inline-block;
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  cursor: pointer;
-  text-decoration: none;
-  margin-bottom: 1.3rem;
+/* ----- Experimental ----- */
+.waveSpacer{
+  aspect-ratio: 960/275;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.search-form {
-  display: flex;
-  align-items: center;
+.waves1{
+  background-image: url('../waves1.svg');
 }
-
-.search-input {
-  flex-grow: 1;
-  padding: 0.8rem;
-  border: 0;
-  border-radius: 4px;
-  font-size: 1rem;
+.waves2{
+  background-image: url('../waves2.svg');
 }
-
-.search-button {
-  padding: 0.7rem 1rem;
-  margin-left: 0.5rem;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
+.waves3{
+  background-image: url('../waves3.svg');
 }
-
-.search-button:hover {
-  background-color: #0058b7;
-}
-
-.search-input:focus,
-.search-button:focus {
-  outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
-}
-
-.card {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 1rem;
-  margin: 1rem;
-
-  background-color: #fff;
-  color: #333;
-}
-
-.card h2 {
-  font-size: 1.5rem;
-  margin-top: 0;
-}
-
-.card .card-content {
-  margin-top: 1rem;
-}
-
-.card .card-stats {
-  display: flex;
-  margin: 1rem 0;
-}
-
-.card .card-stat {
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
-}
-
-.card .card-stat svg {
-  margin-right: 0.5rem;
-}
-
-.card .card-stat span {
-  font-size: 0.9rem;
-}
-
-.courses .card h2 {
-  margin-bottom: 0;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+.waves4{
+  background-image: url('../waves4.svg');
 }
