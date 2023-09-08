@@ -1,19 +1,21 @@
-'use client';
-import React, { useState } from "react";
-import Sidenav from "./Sidenav";
+import Image from "next/image";
+import icon from "../../e-pacerr_icon.png";
 
-function Header(){
+function Header() {
   return (
     <header className="header">
-      <Sidenav />
-      <div className="headerContainer">
-        <div className="logo">
-          <a href="/"><h3>Enroll in the Pilot Study</h3></a>
-        </div>
+      <div className="logo-container">
+        <a href="/"><Image src={icon} alt="icon" className="icon"></Image></a>
       </div>
-      
+      <div className="link-container">
+        <a href="/" className="nav-link">Home</a>
+        <a href="/modules" className="nav-link">Modules</a>
+        <a href="/faq" className="nav-link">FAQs</a>
+        <button className="click"><a href="/enroll" className="button-text">Enroll Now!</a></button>
+      </div>
     </header>
+
   );
-};
+}
 
 export default Header;

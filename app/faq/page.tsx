@@ -8,8 +8,9 @@ export const metadata = {
 const FAQPage = () => {
   return (
     <div className="content">
+      <div className="buffer"></div>
       <div className="container">
-        <div>
+        <div className="info">
           <div className="section">
             <h2 className="sectionHeader">Frequently asked questions</h2>
             <h6 className="subheading">Jump to a question: </h6>

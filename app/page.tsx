@@ -1,61 +1,83 @@
-import styles from "./page.module.css";
+"use client";
 import Image from "next/image";
-import logoPic from "../e-pacerr_logo_negative.png";
 import stock1 from "../stockImage1.png";
 import stock2 from "../stockImage2.png";
 import stock3 from "../stockImage3.png";
 import stock4 from "../stockImage4.png";
+import missingPhoto from "../missing-photo.png";
+import alphafold from "../alphafold.gif";
 
 const HomePage = () => {
-
   return (
     <div className="content">
-      <div className="landingPageHeader">
-        <Image className='logoImage' src={logoPic} alt='E-PACERR Logo'></Image>
-        <div className="landingSecondaryHeader">
-          <b><u>E</u></b>nhancing{" "}
-          <b><u>P</u></b>rofessionalism,{" "}
-          <b><u>A</u></b>dvocacy, and{" "}
-          <b><u>C</u></b>apacity for{" "}
-          <b><u>E</u></b>xcellence in{" "}
-          <b><u>R</u></b>esposible Bioinformatics{" "}
-          <b><u>R</u></b>esearch
+      <div className="landing-banner">
+        <div className="banner-content">
+        <div className="landing-header">
+            <b><u>E</u></b>nhancing<br/>
+            <b><u>P</u></b>rofessionalism,<br/>
+            <b><u>A</u></b>dvocacy, and<br/>
+            <b><u>C</u></b>apacity for<br/>
+            <b><u>E</u></b>xcellence in<br/>
+            <b><u>R</u></b>esposible Bioinformatics<br/>
+            <b><u>R</u></b>esearch
+          </div>
+          <div className="gif">
+            <Image src={alphafold} alt="gif" className="gif"></Image>
+          </div>
         </div>
       </div>
 
       <div className="container">
-        <div className="sectionHeader">PROJECT AIMS</div>
-        <p className="paragraph">
-          This project will develop free, open, self-paced online modules on the
-          Canvas LMS for exposing and educating bioinformatics trainees on
-          knowledge that is typically considered to be outside of formal
-          training in a traditional research education program. The topics to be
-          covered include professionalism, tenets of reproducibility and
-          replicability, standards for excellence, technical writing skills,
-          best practices for data and code sharing, and advocacy in research. By
-          exposing trainees to this knowledge, which can often be institutional
-          and dependent on mentorship, we will (1) build confidence in trainees’
-          ability to perform reproducible research in their own laboratory,
-          research group, or workplace setting; (2) support a more active and
-          engaged bioinformatics research workforce; and (3) provide a piloted
-          curriculum for other bioinformatics research training programs to
-          implement in their own educational settings.
-        </p>
-      </div>
+        <div className="section-separater"></div>
 
-      <div className="learnMore">
-        <div className="item">
-          <div className="thumbnailContainer">
-            <Image className="thumbnail" src={stock1} alt="Stock Photo"></Image>
-          </div>
-          <div className="itemContent">
-            <h5 className="contentHeader">Enroll in the Pilot Study</h5>
-            <br></br>
+        <div className="section">
+          <div className="section-content">
+            <div className="section-header">Our Mission</div>
             <p className="paragraph">
-              Click here to Enroll in our Open Courses Pilot Study!
+              The E-PACERR project outcome will be to develop free, open,
+              self-paced online modules on the Canvas LMS for exposing and
+              educating bioinformatics trainees on knowledge that is typically
+              considered to be outside of formal training in a traditional
+              research education program.{" "}
             </p>
           </div>
+          <div className="picture-container">
+            <Image className="picture" src={stock2} alt="stock picture"></Image>
+          </div>
         </div>
+
+        <div className="section-separater"></div>
+
+        <div className="section">
+          <div className="section-content">
+            <div className="section-header">What are Modules?</div>
+            <p className="paragraph">
+            Our modules will teach trainees about the bioinformatics community
+            and how to engage with it. The content will be presented in various
+            formats, including videos, quizzes, coding exercises, and
+            open-access reading material. The project will consist of at least
+            12 major modules, and all assessments will be auto-graded. The
+            project will complement ongoing training in bioinformatics education
+            at any point in one's career, and the self-paced modules will enable
+            users to compare their results and effectively join local, regional,
+            and international science communities.
+            <br />
+            <br />
+            The topics to be covered include professionalism, tenets of
+            reproducibility and replicability, standards for excellence,
+            technical writing skills, best practices for data and code sharing,
+            and advocacy in research.
+          </p>
+          </div>
+          <div className="picture-container">
+             
+          </div>
+        </div>
+        <div className="section-separater"></div>
+      </div>
+
+      {/* <div className="learnMore">
+        
 
         <div className="item">
           <div className="thumbnailContainer">
@@ -98,16 +120,59 @@ const HomePage = () => {
             </p>
           </div>
         </div>
-        <div className="signUpBlock">
-          <h5 className="signUpBlockHeader">Sign up for Updates!</h5>
-          <div className="signUpBlockContent">
-            If you want to know more about the program or receive information on
-            how to join, please fill out this form:
-            <br></br>
-            <a href="https://tinyurl.com/epacerr-interest" target="_blank">
-              <button className="buttonTest">Take Action</button>
-            </a>
+      </div> */}
+
+      <div className="waveSpacer peaks1"></div>
+
+      <div className="banner">
+        <div className="section-header">LEADERSHIP</div>
+
+        <div className="team">
+          <div className="member">
+            <Image className="photo" src={missingPhoto} alt="photo"></Image>
+            <div className="name">Kate Cooper, Ph.D.</div>
+            <div className="role">Principle Investigator</div>
           </div>
+
+          <div className="member">
+            <Image className="photo" src={missingPhoto} alt="photo"></Image>
+            <div className="name">Dario Ghersi, M.D., Ph.D.</div>
+            <div className="role">Co-Investigator</div>
+          </div>
+
+          <div className="member">
+            <Image className="photo" src={missingPhoto} alt="photo"></Image>
+            <div className="name">Kiran Bastola, Ph.D.</div>
+            <div className="role">Co-Investigator</div>
+          </div>
+
+          <div className="member">
+            <Image className="photo" src={missingPhoto} alt="photo"></Image>
+            <div className="name">Ishwor Thapa</div>
+            <div className="role">Technical Administrator</div>
+          </div>
+
+          <div className="member">
+            <Image className="photo" src={missingPhoto} alt="photo"></Image>
+            <div className="name">TBD</div>
+            <div className="role">Graduate Assistant</div>
+          </div>
+        </div>
+
+        <div className="waveSpacer peaks2"></div>
+      </div>
+
+      <div className="section"></div>
+
+      <div className="signUpBlock">
+        <h5 className="signUpBlockHeader">Sign up for Updates!</h5>
+        <div className="signUpBlockContent">
+          If you want to know more about the program or receive information on
+          how to join, please fill out this form:
+          <br></br>
+          <a href="https://tinyurl.com/epacerr-interest" target="_blank">
+            <button className="buttonTest">Take Action</button>
+          </a>
         </div>
       </div>
     </div>

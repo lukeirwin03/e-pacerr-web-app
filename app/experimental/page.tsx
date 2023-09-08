@@ -1,14 +1,12 @@
 import React from "react";
 import AnimatedHeader from "../components/AnimatedHeader";
+import Loader from "../loading"
 
 const ExperimentalPage = () => {
   return (
     <>
-      <AnimatedHeader></AnimatedHeader>
-      <div className="waveSpacer waves1"></div>
-      <div className="waveSpacer waves2"></div>
-      <div className="waveSpacer waves3"></div>
-      <div className="waveSpacer waves4"></div>
+      {/* <AnimatedHeader></AnimatedHeader> */}
+      <Loader></Loader>
     </>
   );
 };

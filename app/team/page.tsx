@@ -16,35 +16,28 @@ const TeamPage = () => {
           items, centered around providing effective content that is available –
           and actually educational - for all.
         </h2>
-        <div className="text">
-          <ul>
-            <li>
-              1. Education Goal 1: Develop a self-paced, free, online curriculum
-              that is usable and adopts the tenets of universal design. We will
-              develop 12 modules of content that achieve a System Usability
-              Score (SUS) of 80 or higher indicating a usable system. This will
-              be done in Y1-Y3.
-            </li>
-            <li>
-              2. Education Goal 2: Provide a curriculum that is effective in
-              educating users on responsible, rigorous, and reproducible
-              bioinformatics research. The 12 modules of content will be formed
-              around current literature in responsible research, bioinformatics
-              best practices, ethics, professionalism, and institutional
-              knowledge – all of which are taught inconsistently or not at all
-              in traditional bioinformatics education programs. This will be
-              done in Y1-Y2.
-            </li>
-            <li>
-              3. Education Goal 3: Provide built-in measures of mastery of
-              content for each individual module so trainees can confidently
-              evaluate their grasp of the material. We use both formative and
-              summative assessments to measure mastery of learning for students
-              in an automatic way. All modules will be piloted by the end of
-              summer in Y3.
-            </li>
-          </ul>
-        </div>
+
+        <div className="sectionHeader">EDUCATION GOALS</div>
+        <p className="paragraph">
+          <b>Goal 1:</b> Develop a self-paced, free, online curriculum that is
+          usable and adopts the tenets of universal design. We will develop 12
+          modules of content that achieve a System Usability Score (SUS) of 80
+          or higher indicating a usable system. This will be done in Y1-Y3.
+          <br />
+          <b>Goal 2:</b> Provide a curriculum that is effective in educating
+          users on responsible, rigorous, and reproducible bioinformatics
+          research. The 12 modules of content will be formed around current
+          literature in responsible research, bioinformatics best practices,
+          ethics, professionalism, and institutional knowledge – all of which
+          are taught inconsistently or not at all in traditional bioinformatics
+          education programs. This will be done in Y1-Y2.
+          <br />
+          <b>Goal 3:</b> Provide built-in measures of mastery of content for
+          each individual module so trainees can confidently evaluate their
+          grasp of the material. We use both formative and summative assessments
+          to measure mastery of learning for students in an automatic way. All
+          modules will be piloted by the end of summer in Y3.
+        </p>
         <br></br>
 
         <div className="section">
@@ -97,6 +90,7 @@ const TeamPage = () => {
             <div className="role">Graduate Assistant</div>
           </div>
         </div>
+        
       </div>
       <div className="section">
         <div className="banner">

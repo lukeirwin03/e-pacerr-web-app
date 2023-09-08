@@ -20,6 +20,8 @@ const Footer = () => {
   
   if(isLargeScreen){
     return (
+      <div>
+      <div className="waveSpacer peaks3"></div>
       <footer className="footer">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <div className="row top">
@@ -46,7 +48,6 @@ const Footer = () => {
                 <li><a href="/" className="footerLink">Home</a></li>
                 <li><a href="/enroll" className="footerLink">Enroll</a></li>
                 <li><a href="/modules" className="footerLink">Modules</a></li>
-                <li><a href="/team" className="footerLink">Team</a></li>
                 <li><a href="/faq" className="footerLink">FAQs</a></li>
               </ul>
             </div>
@@ -74,11 +75,14 @@ const Footer = () => {
           ©2023 E-PACERR. All Rights Reserved
         </div>
       </footer>
+      </div>
     );
   }
 
   if(!isLargeScreen){
     return (
+      <div>
+      <div className="waveSpacer peaks3"></div>
       <footer className="footer">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <div className="row top">
@@ -129,6 +133,7 @@ const Footer = () => {
           ©2023 E-PACERR. All Rights Reserved
         </div>
       </footer>
+      </div>
     );
   }
   else{

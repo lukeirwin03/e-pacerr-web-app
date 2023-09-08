@@ -2,7 +2,6 @@
 .footer{
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
     background-color: var(--primary-accent);
     padding: 2rem 5rem 2rem 5rem;
     height: 40rem;
@@ -159,6 +158,7 @@
     .desc{
       font-size: var(--tertiary-heading);
     }
+
     .columnHeader{
       font-size: var(--tertiary-heading);
       color: var(--primary-white);
