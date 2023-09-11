@@ -52,26 +52,24 @@ const HomePage = () => {
           <div className="section-content">
             <div className="section-header">What are Modules?</div>
             <p className="paragraph">
-            Our modules will teach trainees about the bioinformatics community
-            and how to engage with it. The content will be presented in various
-            formats, including videos, quizzes, coding exercises, and
-            open-access reading material. The project will consist of at least
-            12 major modules, and all assessments will be auto-graded. The
-            project will complement ongoing training in bioinformatics education
-            at any point in one's career, and the self-paced modules will enable
-            users to compare their results and effectively join local, regional,
-            and international science communities.
-            <br />
-            <br />
-            The topics to be covered include professionalism, tenets of
-            reproducibility and replicability, standards for excellence,
-            technical writing skills, best practices for data and code sharing,
-            and advocacy in research.
-          </p>
+              Our modules will teach trainees about the bioinformatics community
+              and how to engage with it. The content will be presented in
+              various formats, including videos, quizzes, coding exercises, and
+              open-access reading material. The project will consist of at least
+              12 major modules, and all assessments will be auto-graded. The
+              project will complement ongoing training in bioinformatics
+              education at any point in one's career, and the self-paced modules
+              will enable users to compare their results and effectively join
+              local, regional, and international science communities.
+              <br />
+              <br />
+              The topics to be covered include professionalism, tenets of
+              reproducibility and replicability, standards for excellence,
+              technical writing skills, best practices for data and code
+              sharing, and advocacy in research.
+            </p>
           </div>
-          <div className="picture-container">
-             
-          </div>
+          <div className="picture-container"></div>
         </div>
         <div className="section-separater"></div>
       </div>
@@ -162,17 +160,17 @@ const HomePage = () => {
         <div className="waveSpacer peaks2"></div>
       </div>
 
-      <div className="section"></div>
-
-      <div className="signUpBlock">
-        <h5 className="signUpBlockHeader">Sign up for Updates!</h5>
-        <div className="signUpBlockContent">
-          If you want to know more about the program or receive information on
-          how to join, please fill out this form:
-          <br></br>
-          <a href="https://tinyurl.com/epacerr-interest" target="_blank">
-            <button className="buttonTest">Take Action</button>
-          </a>
+      <div className="section">
+        <div className="signUpBlock">
+          <h5 className="signUpBlockHeader">Sign up for Updates!</h5>
+          <div className="signUpBlockContent">
+            If you want to know more about the program or receive information on
+            how to join, please fill out this form:
+            <br></br>
+            <a href="https://tinyurl.com/epacerr-interest" target="_blank">
+              <button className="buttonTest">Take Action</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

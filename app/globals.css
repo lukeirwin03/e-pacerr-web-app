@@ -259,8 +259,8 @@ body.side-nav-open {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25rem;
-    margin: 4rem auto;
+    width: 20rem;
+    margin: 3rem auto;
     text-align: center;
   }
 }
