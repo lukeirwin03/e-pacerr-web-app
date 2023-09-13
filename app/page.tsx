@@ -74,52 +74,6 @@ const HomePage = () => {
         <div className="section-separater"></div>
       </div>
 
-      {/* <div className="learnMore">
-        
-
-        <div className="item">
-          <div className="thumbnailContainer">
-            <Image className="thumbnail" src={stock2} alt="Stock Photo"></Image>
-          </div>
-          <div className="itemContent">
-            <h5 className="contentHeader">About E-PACERR</h5>
-            <br></br>
-            <p className="paragraph">
-              Direct trainings on ethics, responsible research, or
-              professionalism are notably absent in most formal training in
-              bioinformatics
-            </p>
-          </div>
-        </div>
-
-        <div className="item">
-          <div className="thumbnailContainer">
-            <Image className="thumbnail" src={stock3} alt="Stock Photo"></Image>
-          </div>
-          <div className="itemContent">
-            <h5 className="contentHeader">Meet the Team</h5>
-            <br></br>
-            <p className="paragraph">
-              Meet the hardworking leadership team that makes this program
-              possible!
-            </p>
-          </div>
-        </div>
-
-        <div className="item">
-          <div className="thumbnailContainer">
-            <Image className="thumbnail" src={stock4} alt="Stock Photo"></Image>
-          </div>
-          <div className="itemContent">
-            <h5 className="contentHeader">Sign up for Updates</h5>
-            <br></br>
-            <p className="paragraph">
-              Get notified as new modules and other new updates are posted!
-            </p>
-          </div>
-        </div>
-      </div> */}
-
       <div className="waveSpacer peaks1"></div>
 
       <div className="banner">

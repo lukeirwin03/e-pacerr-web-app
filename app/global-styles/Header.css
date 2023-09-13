@@ -63,12 +63,26 @@
   width: 4.5rem;
 }
 
+.sidenav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 840px) {
   .header {
     display: flex;
     justify-content: center;
     background-color: var(--primary-dark);
-    padding: 1rem;
+    padding: .25 1.5rem;
   }
-}
 
+  .link-container{
+    display: none;
+  }
+
+  .spacer { 
+    width: 70%;
+  }
+
+}

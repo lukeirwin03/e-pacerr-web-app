@@ -1,4 +1,4 @@
-// Sidenav.tsx
+"use client"
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -22,21 +22,17 @@ const Sidenav = () => {
       </button>
 
       <div className={`sidenav ${isOpen ? "open" : ""}`}>
-        
         <div className="link">
           <a href="/">Home</a>
-        </div>
-        <div className="link">
-          <a href="/enroll">Enroll</a>
         </div>
         <div className="link">
           <a href="/modules">Modules</a>
         </div>
         <div className="link">
-          <a href="/team">Team</a>
+          <a href="/faq">FAQs</a>
         </div>
         <div className="link">
-          <a href="/faq">FAQs</a>
+          <a href="/enroll">Enroll</a>
         </div>
       </div>
       {isOpen && <div className="overlay" onClick={toggleSidenav} />}

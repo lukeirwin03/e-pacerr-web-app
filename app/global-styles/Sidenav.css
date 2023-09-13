@@ -1,14 +1,12 @@
 .sidenav {
   position: fixed;
-  left: -200px;
+  right: -180px;
   top: 0;
-  height: 100%;
-  width: 200px;
-  background-color: var(--primary-white);
-  color: var(--primary-black);
+  height: 100vh;
+  width: 180px;
+  background-color: var(--black);
   transition: all 0.4s ease-in-out .2s;
-  /* transition-delay: .2s; */
-  z-index: 1;
+  z-index: 2;
   box-sizing: border-box;            
 }
 
@@ -21,30 +19,34 @@
   width: 100%;
 }
 
+.sidenav .link {
+  background-color: var(--black);
+}
+
 .overlay {
   position: fixed;
   left: 0;
   top: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(1px);
-  z-index: 2;
+  z-index: 30;
   opacity: 0;
 }
 
 .open {
-  transform: translateX(200px);
-  z-index: 2;
+  transform: translateX(-180px);
+  z-index: 3;
 }
 
 .open ~ .overlay {
-  z-index: 1;
+  z-index: 2;
   opacity: 1;
 }
 
 .link a:hover{
-  background-color: var(--primary-accent);
+  background-color: var(--primary-complement);
   color: var(--primary-white);
 }
 
@@ -83,4 +85,3 @@
 .line{
   margin: 2px;
 }
-

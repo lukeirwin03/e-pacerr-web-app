@@ -263,6 +263,26 @@ body.side-nav-open {
     margin: 3rem auto;
     text-align: center;
   }
+
+  /* .landing-header{
+    font-size: 32pt;
+  } */
+
+  .landing-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--primary-white);
+    height: 38rem;
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .landing-header {
+    font-size: 32pt;
+  } 
 }
 
 /* ----- Info Pages ----- */
