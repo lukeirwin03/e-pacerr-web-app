@@ -36,7 +36,7 @@ const Header = () => {
     )
   }
 
-  if(!isLargerScreen){
+  else{
     return(
       <header className="header">
         <div className="logo-container">
@@ -47,5 +47,6 @@ const Header = () => {
       </header>
     )
   }
+
 }
 export default Header;
