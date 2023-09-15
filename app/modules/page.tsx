@@ -5,39 +5,39 @@ import stock1 from "../../stockImage1.png";
 import LoadingScreen from "../loading";
 
 const modules = [
-  {
-    title: "Reproducibility in Bioinformatics - (1)",
+  { /* Module 1 */
+    title: "Reproducibility in Bioinformatics", 
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    learningGoal: "Introduction to E-PACERR",
+      "This module explores the key principles of the Scientific Method, a fundamental approach used by scientists to conduct research and answer complex questions. Learn how to formulate hypotheses, design experiments, gather and analyze data, and draw meaningful conclusions within the scientific community.",
+    learningGoal: "Exploring the Scientific Method",
     thumbnail: stock1,
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826925",
   },
-  {
-    title: "Reproducibility in Bioinformatics - (2)",
+  { /* Module 2 */
+    title: "Replicability in Bioinformatics",
     description:
       "Faucibus a pellentesque sit amet porttitor. Felis bibendum ut tristique et egestas. Adipiscing bibendum est ultricies integer. Faucibus a pellentesque sit amet porttitor eget dolor. Ultricies integer quis auctor elit sed vulputate mi. Risus nullam eget felis eget nunc lobortis mattis. Amet commodo nulla facilisi nullam vehicula ipsum a arcu.",
     learningGoal: "What is Bioinformatics?",
     thumbnail: stock1,
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1811699",
   },
-  {
-    title: "Data Management in Bioinformatics",
+  { /* Module 3 */
+    title: "Statistical Rigor in Bioinformatics",
     description:
       "Fermentum posuere urna nec tincidunt praesent. In eu mi bibendum neque egestas congue quisque egestas diam. In metus vulputate eu scelerisque. Sed sed risus pretium quam vulputate dignissim suspendisse. Netus et malesuada fames ac turpis egestas. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis.",
     learningGoal: "To learn something valuable",
     thumbnail: stock1,
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826932",
   },
-  {
-    title: "Code Management in Bioinformatics",
+  { /* Module 4 */
+    title: "Reliability, Generalizability, and Robustness in Bioinformatics",
     description:
       "Semper risus in hendrerit gravida rutrum quisque non tellus. Malesuada fames ac turpis egestas maecenas pharetra convallis. Donec adipiscing tristique risus nec feugiat in fermentum posuere. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Quisque id diam vel quam.",
     learningGoal: "Introduction to E-PACERR",
     thumbnail: stock1,
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826933",
   },
-  {
+  { /* Module 5 */
     title: "Case Studies for Resposible Research in Bioinformatics",
     description:
       "Cras adipiscing enim eu turpis egestas. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Proin fermentum leo vel orci. Bibendum ut tristique et egestas quis.",
@@ -45,8 +45,56 @@ const modules = [
     thumbnail: stock1,
     link: "linkToCanvasModule.com",
   },
-  {
+  { /* Module 6 */
     title: "Databases and Reproducible Data Mining in Bioinformatics",
+    description:
+      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+    learningGoal: "To learn something valuable",
+    thumbnail: stock1,
+    link: "linkToCanvasModule.com",
+  },
+  { /* Module 7 */
+    title: "Best Practices for Data Sharing in Bioinformatics",
+    description:
+      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+    learningGoal: "To learn something valuable",
+    thumbnail: stock1,
+    link: "linkToCanvasModule.com",
+  },
+  { /* Module 8 */
+    title: "Best Practices for Code Sharing in Bioinformatics",
+    description:
+      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+    learningGoal: "To learn something valuable",
+    thumbnail: stock1,
+    link: "linkToCanvasModule.com",
+  },
+  { /* Module 9 */
+    title: "Standards for Excellence in Bioinformatics Education and Training",
+    description:
+      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+    learningGoal: "To learn something valuable",
+    thumbnail: stock1,
+    link: "linkToCanvasModule.com",
+  },
+  { /* Module 10 */
+    title: "Advocacy in Bioinformatics Research and Education",
+    description:
+      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+    learningGoal: "To learn something valuable",
+    thumbnail: stock1,
+    link: "linkToCanvasModule.com",
+  },
+  { /* Module 11 */
+    title: "Technical Writing Skills for Responsible Bioinformatics Communication",
+    description:
+      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+    learningGoal: "To learn something valuable",
+    thumbnail: stock1,
+    link: "linkToCanvasModule.com",
+  },
+  { /* Module 12 */
+    title: "Professionalism in Bioinformatics",
     description:
       "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
     learningGoal: "To learn something valuable",
@@ -88,8 +136,9 @@ const ModulesPage = () => {
     return (
       <div className="content">
         <div className="buffer"></div>
-        <div className="section-separater"></div>
+        
         <div className="container">
+          <div className="section-separater"></div>
           {modules.map((module, index) => (
             <div className="organizer">
               <div
@@ -120,7 +169,7 @@ const ModulesPage = () => {
                       <h2 className="moduleTitle">{module.title}</h2>
                       <h3 className="moduleGoal">{module.learningGoal}</h3>
                       <p className="moduleText">{module.description}</p>
-                      <a className="link" target="_blank"  href={module.link}>
+                      <a className="link" target="_blank" href={module.link}>
                         Visit Module on Canvas
                       </a>
                     </div>
