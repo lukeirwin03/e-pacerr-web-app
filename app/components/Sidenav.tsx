@@ -6,7 +6,7 @@ const Sidenav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 768 && window.matchMedia("(min-width: 999px)").matches) {
       setIsOpen(true);
     }
   }, []);
