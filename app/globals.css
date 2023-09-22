@@ -81,6 +81,7 @@ body.side-nav-open {
 }
 
 .landing-header{
+  margin: 0 2rem;
   font-size: 40pt;
   height: 100%;
   color: var(--primary-white);
@@ -88,6 +89,7 @@ body.side-nav-open {
 }
 
 .gif {
+  margin: 0 2rem;
   display: flex;
   height: 35rem;
   width: auto;
@@ -368,7 +370,7 @@ body.side-nav-open {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   width: 85%;
 }
 

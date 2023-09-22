@@ -5,7 +5,7 @@ import icon from "../../e-pacerr_icon.png";
 import Sidenav from "./Sidenav"
 
 const Header = () => {
-  const [isLargerScreen, setIsLargeScreen] = useState(false);
+  const [isLargerScreen, setIsLargeScreen] = useState(true);
   
   useEffect(() => {
     const handleResize = () => {
@@ -30,7 +30,7 @@ const Header = () => {
           <a href="/" className="nav-link">Home</a>
           <a href="/modules" className="nav-link">Modules</a>
           <a href="/faq" className="nav-link">FAQs</a>
-          <button className="click"><a href="/enroll" className="button-text">Enroll Now!</a></button>
+          <a href="/enroll"><button className="click"><span className="button-text">Enroll Now!</span></button></a>
         </div>
       </header>
     )

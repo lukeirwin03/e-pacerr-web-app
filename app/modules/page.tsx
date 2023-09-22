@@ -6,7 +6,7 @@ import LoadingScreen from "../loading";
 
 const modules = [
   { /* Module 1 */
-    title: "Reproducibility in Bioinformatics", 
+    title: "Introducing Reproducibility in Bioinformatics", 
     description:
       "This module explores the key principles of the Scientific Method, a fundamental approach used by scientists to conduct research and answer complex questions. Learn how to formulate hypotheses, design experiments, gather and analyze data, and draw meaningful conclusions within the scientific community.",
     learningGoal: "Exploring the Scientific Method",
@@ -14,93 +14,93 @@ const modules = [
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826925",
   },
   { /* Module 2 */
-    title: "Replicability in Bioinformatics",
+    title: "Exploring Reproducibility in Bioinformatics",
     description:
-      "Faucibus a pellentesque sit amet porttitor. Felis bibendum ut tristique et egestas. Adipiscing bibendum est ultricies integer. Faucibus a pellentesque sit amet porttitor eget dolor. Ultricies integer quis auctor elit sed vulputate mi. Risus nullam eget felis eget nunc lobortis mattis. Amet commodo nulla facilisi nullam vehicula ipsum a arcu.",
-    learningGoal: "What is Bioinformatics?",
+      "This material explores reproducibility in bioinformatics, covering topics like using others' code, running software pipelines, and understanding published Methods sections of published papers. Reproducibility involves achieving consistent results across different experiments, locations, and instruments without necessitating new software tools. It's about obtaining consistent outcomes using the same data and code as the original study, applicable to various contexts in bioinformatics, from experimental performance to data management.",
+    learningGoal: "How to Identify the Fundamental Tenets of Reproducibility",
     thumbnail: stock1,
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1811699",
   },
   { /* Module 3 */
-    title: "Statistical Rigor in Bioinformatics",
+    title: "Data Management in Bioinformatics",
     description:
-      "Fermentum posuere urna nec tincidunt praesent. In eu mi bibendum neque egestas congue quisque egestas diam. In metus vulputate eu scelerisque. Sed sed risus pretium quam vulputate dignissim suspendisse. Netus et malesuada fames ac turpis egestas. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis.",
-    learningGoal: "To learn something valuable",
+      "This learning material covers the essentials of reproducibility in bioinformatics, emphasizing the importance of sharing both data and code for replication. It highlights the need for training in ethics, responsible research, and historical context within bioinformatics education, stressing the value of fostering a culture of responsible research. The module also outlines good practices for code and data management, including open access, documentation, licensing, and compliance.",
+    learningGoal: "Identify the Impact of Creating Reproducible Bioinformatics Analyses",
     thumbnail: stock1,
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826932",
   },
   { /* Module 4 */
-    title: "Reliability, Generalizability, and Robustness in Bioinformatics",
+    title: "Code Management in Bioinformatics",
     description:
-      "Semper risus in hendrerit gravida rutrum quisque non tellus. Malesuada fames ac turpis egestas maecenas pharetra convallis. Donec adipiscing tristique risus nec feugiat in fermentum posuere. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Quisque id diam vel quam.",
+      "This module emphasizes enhancing code accessibility through readability and comprehension, stressing the vital role of clear documentation, comments, and adherence to style guides. It also underscores the value of code sharing for reusability and collaborative efforts, advocating platforms like GitHub and Bitbucket for hosting code repositories that include commented and well-structured code, licenses, README files, and contact information.",
     learningGoal: "Introduction to E-PACERR",
     thumbnail: stock1,
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826933",
   },
-  { /* Module 5 */
-    title: "Case Studies for Resposible Research in Bioinformatics",
-    description:
-      "Cras adipiscing enim eu turpis egestas. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Proin fermentum leo vel orci. Bibendum ut tristique et egestas quis.",
-    learningGoal: "What is Bioinformatics?",
-    thumbnail: stock1,
-    link: "linkToCanvasModule.com",
-  },
-  { /* Module 6 */
-    title: "Databases and Reproducible Data Mining in Bioinformatics",
-    description:
-      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
-    learningGoal: "To learn something valuable",
-    thumbnail: stock1,
-    link: "linkToCanvasModule.com",
-  },
-  { /* Module 7 */
-    title: "Best Practices for Data Sharing in Bioinformatics",
-    description:
-      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
-    learningGoal: "To learn something valuable",
-    thumbnail: stock1,
-    link: "linkToCanvasModule.com",
-  },
-  { /* Module 8 */
-    title: "Best Practices for Code Sharing in Bioinformatics",
-    description:
-      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
-    learningGoal: "To learn something valuable",
-    thumbnail: stock1,
-    link: "linkToCanvasModule.com",
-  },
-  { /* Module 9 */
-    title: "Standards for Excellence in Bioinformatics Education and Training",
-    description:
-      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
-    learningGoal: "To learn something valuable",
-    thumbnail: stock1,
-    link: "linkToCanvasModule.com",
-  },
-  { /* Module 10 */
-    title: "Advocacy in Bioinformatics Research and Education",
-    description:
-      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
-    learningGoal: "To learn something valuable",
-    thumbnail: stock1,
-    link: "linkToCanvasModule.com",
-  },
-  { /* Module 11 */
-    title: "Technical Writing Skills for Responsible Bioinformatics Communication",
-    description:
-      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
-    learningGoal: "To learn something valuable",
-    thumbnail: stock1,
-    link: "linkToCanvasModule.com",
-  },
-  { /* Module 12 */
-    title: "Professionalism in Bioinformatics",
-    description:
-      "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
-    learningGoal: "To learn something valuable",
-    thumbnail: stock1,
-    link: "linkToCanvasModule.com",
-  },
+  // { /* Module 5 */
+  //   title: "Case Studies for Resposible Research in Bioinformatics",
+  //   description:
+  //     "Cras adipiscing enim eu turpis egestas. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Proin fermentum leo vel orci. Bibendum ut tristique et egestas quis.",
+  //   learningGoal: "What is Bioinformatics?",
+  //   thumbnail: stock1,
+  //   link: "linkToCanvasModule.com",
+  // },
+  // { /* Module 6 */
+  //   title: "Databases and Reproducible Data Mining in Bioinformatics",
+  //   description:
+  //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+  //   learningGoal: "To learn something valuable",
+  //   thumbnail: stock1,
+  //   link: "linkToCanvasModule.com",
+  // },
+  // { /* Module 7 */
+  //   title: "Best Practices for Data Sharing in Bioinformatics",
+  //   description:
+  //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+  //   learningGoal: "To learn something valuable",
+  //   thumbnail: stock1,
+  //   link: "linkToCanvasModule.com",
+  // },
+  // { /* Module 8 */
+  //   title: "Best Practices for Code Sharing in Bioinformatics",
+  //   description:
+  //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+  //   learningGoal: "To learn something valuable",
+  //   thumbnail: stock1,
+  //   link: "linkToCanvasModule.com",
+  // },
+  // { /* Module 9 */
+  //   title: "Standards for Excellence in Bioinformatics Education and Training",
+  //   description:
+  //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+  //   learningGoal: "To learn something valuable",
+  //   thumbnail: stock1,
+  //   link: "linkToCanvasModule.com",
+  // },
+  // { /* Module 10 */
+  //   title: "Advocacy in Bioinformatics Research and Education",
+  //   description:
+  //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+  //   learningGoal: "To learn something valuable",
+  //   thumbnail: stock1,
+  //   link: "linkToCanvasModule.com",
+  // },
+  // { /* Module 11 */
+  //   title: "Technical Writing Skills for Responsible Bioinformatics Communication",
+  //   description:
+  //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+  //   learningGoal: "To learn something valuable",
+  //   thumbnail: stock1,
+  //   link: "linkToCanvasModule.com",
+  // },
+  // { /* Module 12 */
+  //   title: "Professionalism in Bioinformatics",
+  //   description:
+  //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
+  //   learningGoal: "To learn something valuable",
+  //   thumbnail: stock1,
+  //   link: "linkToCanvasModule.com",
+  // },
 ];
 
 const ModulesPage = () => {
