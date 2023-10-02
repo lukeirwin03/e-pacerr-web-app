@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
@@ -23,6 +25,7 @@
     "react-bootstrap": "^2.7.4",
     "react-client": "^1.0.1",
     "react-dom": "18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "sass": "^1.62.0",
     "tailwind-merge": "^1.12.0",
     "tailwindcss-animate": "^1.0.5",

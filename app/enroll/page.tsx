@@ -36,36 +36,6 @@ const EnrollPage = () => {
             <div className="imageCaption">A caption for the photo</div>
           </div>
         </div>
-        {/* <div className="section">
-          <h6 className="subheading">Where we are today</h6>
-          <div className="text">
-            What has your team accomplished? What are you most proud of? Tell
-            site viewers some of your project's latest accomplishments.
-          </div>
-
-          <div className="thumbnails">
-            <div className="organizer">
-              <Image
-                className="thumbnail"
-                src={stock1}
-                alt="Stock Photo"
-              ></Image>
-              <div className="imageCaption">
-                Caption for recent accomplishment
-              </div>
-            </div>
-            <div className="organizer">
-              <Image
-                className="thumbnail"
-                src={stock1}
-                alt="Stock Photo"
-              ></Image>
-              <div className="imageCaption">
-                Caption for recent accomplishment
-              </div>
-            </div>
-          </div> 
-        </div>*/}
       </div>
     </div>
   );

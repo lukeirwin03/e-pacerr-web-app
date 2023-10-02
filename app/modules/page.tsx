@@ -150,14 +150,14 @@ const ModulesPage = () => {
                 {index % 2 === 0 ? (
                   <>
                     <Image
-                      className="moduleThumbnail left"
+                      className="module-thumbnail left"
                       src={module.thumbnail}
                       alt={module.title}
                     />
-                    <div className="moduleContent right">
-                      <h2 className="moduleTitle">{module.title}</h2>
-                      <h3 className="moduleGoal">{module.learningGoal}</h3>
-                      <p className="moduleText">{module.description}</p>
+                    <div className="module-content right">
+                      <h2 className="module-title">{module.title}</h2>
+                      <h3 className="module-goal">{module.learningGoal}</h3>
+                      <p className="module-text">{module.description}</p>
                       <a className="link" target="_blank" href={module.link}>
                         Visit Module on Canvas
                       </a>
@@ -165,16 +165,16 @@ const ModulesPage = () => {
                   </>
                 ) : (
                   <>
-                    <div className="moduleContent left">
-                      <h2 className="moduleTitle">{module.title}</h2>
-                      <h3 className="moduleGoal">{module.learningGoal}</h3>
-                      <p className="moduleText">{module.description}</p>
+                    <div className="module-content left">
+                      <h2 className="module-title">{module.title}</h2>
+                      <h3 className="module-goal">{module.learningGoal}</h3>
+                      <p className="module-text">{module.description}</p>
                       <a className="link" target="_blank" href={module.link}>
                         Visit Module on Canvas
                       </a>
                     </div>
                     <Image
-                      className="moduleThumbnail right"
+                      className="module-thumbnail right"
                       src={module.thumbnail}
                       alt={module.title}
                     />
@@ -199,14 +199,14 @@ const ModulesPage = () => {
             <div key={index} className="module">
               <>
                 <Image
-                  className="moduleThumbnail left"
+                  className="module-thumbnail left"
                   src={module.thumbnail}
                   alt={module.title}
                 />
-                <div className="moduleContent right">
-                  <h2 className="moduleTitle">{module.title}</h2>
-                  <h3 className="moduleGoal">{module.learningGoal}</h3>
-                  <p className="moduleText">{module.description}</p>
+                <div className="module-content right">
+                  <h2 className="module-title">{module.title}</h2>
+                  <h3 className="module-goal">{module.learningGoal}</h3>
+                  <p className="module-text">{module.description}</p>
                   <a className="link" target="_blank" href={module.link}>
                     Visit Module on Canvas
                   </a>

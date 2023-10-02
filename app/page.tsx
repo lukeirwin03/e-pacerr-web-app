@@ -6,6 +6,12 @@ import stock3 from "../stockImage3.png";
 import stock4 from "../stockImage4.png";
 import missingPhoto from "../missing-photo.png";
 import alphafold from "../alphafold.gif";
+import SlideShow from "./components/SlideShow";
+
+
+const images = [
+  stock1, stock2, stock3
+]
 
 const HomePage = () => {
   return (
@@ -69,14 +75,16 @@ const HomePage = () => {
               sharing, and advocacy in research.
             </p>
           </div>
-          <div className="picture-container"></div>
+          <div className="picture-container">
+            {/* <SlideShow /> */}
+          </div>
         </div>
         <div className="section-separater"></div>
       </div>
 
       <div className="waveSpacer peaks1"></div>
 
-      <div className="banner">
+      <div className="team-banner">
         <div className="section-header">LEADERSHIP</div>
 
         <div className="team">
@@ -115,14 +123,14 @@ const HomePage = () => {
       </div>
 
       <div className="section">
-        <div className="signUpBlock">
-          <h5 className="signUpBlockHeader">Sign up for Updates!</h5>
-          <div className="signUpBlockContent">
+        <div className="signup-block">
+          <h5 className="signup-header">Sign up for Updates!</h5>
+          <div className="signup-content">
             If you want to know more about the program or receive information on
             how to join, please fill out this form:
             <br></br>
             <a href="https://tinyurl.com/epacerr-interest" target="_blank">
-              <button className="buttonTest">Take Action</button>
+              <button className="take-action">Take Action</button>
             </a>
           </div>
         </div>

@@ -1,58 +1,21 @@
 import React from "react";
+import Image from "next/image";
+import stock1 from "../../stockImage1.png";
+import stock2 from "../../stockImage2.png";
+import stock3 from "../../stockImage3.png";
+import stock4 from "../../stockImage4.png";
 
-export const SlideShow = () => {
-  return 
-  <div></div>
-//   <div>
-//     <div id="slider">
-//    <input type="radio" name="slider" id="slide1" checked>
-//    <input type="radio" name="slider" id="slide2">
-//    <input type="radio" name="slider" id="slide3">
-//    <input type="radio" name="slider" id="slide4">
-//    <div id="slides">
-//       <div id="overflow">
-//          <div class="inner">
-//             <div class="slide slide_1">
-//                <div class="slide-content">
-//                   <h2>Slide 1</h2>
-//                   <p>Content for Slide 1</p>
-//                </div>
-//             </div>
-//             <div class="slide slide_2">
-//                <div class="slide-content">
-//                   <h2>Slide 2</h2>
-//                   <p>Content for Slide 2</p>
-//                </div>
-//             </div>
-//             <div class="slide slide_3">
-//                <div class="slide-content">
-//                   <h2>Slide 3</h2>
-//                   <p>Content for Slide 3</p>
-//                </div>
-//             </div>
-//             <div class="slide slide_4">
-//                <div class="slide-content">
-//                   <h2>Slide 4</h2>
-//                   <p>Content for Slide 4</p>
-//                </div>
-//             </div>
-//          </div>
-//       </div>
-//    </div>
-//    <div id="controls">
-//       <label for="slide1"></label>
-//       <label for="slide2"></label>
-//       <label for="slide3"></label>
-//       <label for="slide4"></label>
-//    </div>
-//    <div id="bullets">
-//       <label for="slide1"></label>
-//       <label for="slide2"></label>
-//       <label for="slide3"></label>
-//       <label for="slide4"></label>
-//    </div>
-//     </div>
-//   </div>;
-};
+
+const SlideShow = () => {
+  return (
+    <div className="image-stack">
+      <a href="/modules"><Image className="stack-image" src={stock1} alt="stock photo" /></a>
+      <a href="/modules"><Image className="stack-image" src={stock2} alt="stock photo" /></a>
+      <a href="/modules"><Image className="stack-image" src={stock3} alt="stock photo" /></a>
+      <a href="/modules"><Image className="stack-image" src={stock4} alt="stock photo" /></a>
+    </div>
+  )
+}
 
 export default SlideShow;
+
