@@ -171,13 +171,16 @@ body.side-nav-open {
   }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 999px) {  
   .gif {
-    display: flex;
-    height: 0rem;
-    width: auto;
+    display: none;
   }
 
+  .landing-banner {
+    height: 38rem;
+    margin-top: 5rem;
+  }
+  
   .section {
     display: flex;
     flex-direction: column;
@@ -216,15 +219,6 @@ body.side-nav-open {
     text-align: center;
   }
 
-  .landing-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--black);
-    color: var(--primary-white);
-    height: 38rem;
-    margin-top: 5rem;
-  }
 }
 
 @media only screen and (max-width: 1200px) {

@@ -12,7 +12,7 @@ const HomePage = () => {
     <div className="content">
       <div className="landing-banner">
         <div className="banner-content">
-        <div className="landing-header">
+          <div className="landing-header">
             <b><u>E</u></b>nhancing<br/>
             <b><u>P</u></b>rofessionalism,<br/>
             <b><u>A</u></b>dvocacy, and<br/>
