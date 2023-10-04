@@ -146,17 +146,19 @@ body.side-nav-open {
     width: 60%;
   }
 
-  .picture-container {
+  .picture-container { /* TODO: Still need to fix this to make consistent picture sizes */
     display: flex;
     flex-direction: row;
     justify-content: right;
-    width: 40%;
+    max-width: 28rem;
+    min-height: 15.75rem;
     align-items: center;
+    margin-left: 2rem;
   }
 
   .picture {
-    width: 28rem;
     border-radius: 0.5rem;
+    object-fit: cover;
   }
 
   .signup-block {
@@ -201,6 +203,7 @@ body.side-nav-open {
 
   .picture {
     width: 28rem;
+    object-fit: cover;
     border-radius: 0.5rem;
   }
 
@@ -501,4 +504,8 @@ body.side-nav-open {
 
 .peaks3 {
   background-image: url("../peaks3.svg");
+}
+
+.peaks4 {
+  background-image: url("../peaks4.svg");
 }

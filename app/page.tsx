@@ -6,12 +6,6 @@ import stock3 from "../stockImage3.png";
 import stock4 from "../stockImage4.png";
 import missingPhoto from "../missing-photo.png";
 import alphafold from "../alphafold.gif";
-import SlideShow from "./components/SlideShow";
-
-
-const images = [
-  stock1, stock2, stock3
-]
 
 const HomePage = () => {
   return (
@@ -32,6 +26,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <div className="waveSpacer peaks4"></div>
 
       <div className="container">
         <div className="section-separater"></div>
@@ -48,7 +43,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="picture-container">
-            <Image className="picture" src={stock2} alt="stock picture"></Image>
+            <Image className="picture" src={stock2} alt="stock picture"/>
           </div>
         </div>
 
@@ -76,7 +71,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="picture-container">
-            {/* <SlideShow /> */}
+            <Image className="picture" src={stock3} alt="stock3"/>
           </div>
         </div>
         <div className="section-separater"></div>
