@@ -1,8 +1,45 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import stock1 from "../../stockImage1.png";
 import LoadingScreen from "../loading";
+
+const slideInLeft = {
+  initial: { opacity: 0, x: 50, },
+  animate: ( index : number ) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: .1 * index,
+      duration: .5,
+    }
+  }),
+}
+
+const slideInRight = {
+  initial: { opacity: 0, x: -50, },
+  animate: ( index : number ) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: .1 * index,
+      duration: .5,
+    }
+  }),
+}
+
+const slideUp = {
+  initial: { opacity: 0, y: 50, },
+  animate: ( index : number ) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: .1 * index,
+      duration: .5,
+    }
+  }),
+}
 
 const modules = [
   { /* Module 1 */
@@ -141,8 +178,13 @@ const ModulesPage = () => {
           <div className="section-separater"></div>
           {modules.map((module, index) => (
             <div className="organizer">
-              <div
+              <motion.div
                 key={index}
+                variants={index % 2 === 0 ? slideInLeft : slideInRight}
+                initial="initial"
+                whileInView="animate"
+                viewport={{once:true}}
+                custom={index}
                 className={
                   index % 2 === 0 ? "module even-module" : "module odd-module"
                 }
@@ -180,7 +222,7 @@ const ModulesPage = () => {
                     />
                   </>
                 )}
-              </div>
+              </motion.div>
               <div className="section-separater"></div>
             </div>
           ))}
@@ -196,7 +238,14 @@ const ModulesPage = () => {
         <div className="section-separater"></div>
         <div className="container">
           {modules.map((module, index) => (
-            <div key={index} className="module">
+            <motion.div 
+            key={index} 
+            variants={slideUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{once:true}}
+            custom={index}
+            className="module">
               <>
                 <Image
                   className="module-thumbnail left"
@@ -213,7 +262,7 @@ const ModulesPage = () => {
                 </div>
               </>
               <div className="section-separater"></div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -334,6 +334,7 @@ body.side-nav-open {
 
 .team-banner .section-header {
   color: var(--primary-white);
+  color: linear-gradient(to top, var(--primary-white), var(--secondary-complement));
 }
 
 .team-banner .text {
