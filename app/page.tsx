@@ -12,7 +12,7 @@ import dario_ghersi from "../dario_ghersi.jpeg";
 import kiran_bastola from "../kiran_bastola.jpeg";
 import ishwor_thapa from "../ishwor_thapa.jpeg";
 import alphafold from "../alphafold.gif";
-import SlideShow from "./components/SlideShow";
+// import SlideShow from "./components/SlideShow";
 
 const slideUp = {
   initial: { opacity: 0, y: 50 },
