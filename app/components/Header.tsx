@@ -29,6 +29,7 @@ const Header = () => {
         <div className="link-container">
           <a href="/" className="nav-link">Home</a>
           <a href="/modules" className="nav-link">Modules</a>
+          <a href="/team" className="nav-link">Team</a>
           <a href="/faq" className="nav-link">FAQs</a>
           <a href="/enroll"><button className="click"><span className="button-text">Enroll Now!</span></button></a>
         </div>

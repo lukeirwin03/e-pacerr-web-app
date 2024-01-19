@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import stock1 from "../../stockImage1.png";
 import missingPhoto from "../../missing-photo.png";
+import { Content } from "next/font/google";
 
 export const metadata = {
   title: "Meet the Team",
@@ -10,6 +11,7 @@ export const metadata = {
 const TeamPage = () => {
   return (
     <div className="content">
+      <div className="buffer"></div>
       <div className="container">
         <h2 className="sectionHeader">
           The educational goals of our project include the following three

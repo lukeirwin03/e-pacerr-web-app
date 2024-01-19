@@ -29,6 +29,9 @@ const Sidenav = () => {
           <a href="/modules">Modules</a>
         </div>
         <div className="link">
+          <a href="/team">Team</a>
+        </div>
+        <div className="link">
           <a href="/faq">FAQs</a>
         </div>
         <div className="link">
