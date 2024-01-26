@@ -72,7 +72,7 @@ const Footer = () => {
 
         <div className="row bottom">
           Omaha, NE <br />
-          ©2023 E-PACERR. All Rights Reserved
+          ©2024 E-PACERR. All Rights Reserved
         </div>
       </footer>
       </div>

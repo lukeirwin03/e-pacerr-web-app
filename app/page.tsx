@@ -2,17 +2,14 @@
 import Image from "next/image";
 import { SetStateAction, useState, useRef, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
-import stock1 from "../stockImage1.png";
 import stock2 from "../stockImage2.png";
 import stock3 from "../stockImage3.png";
-import stock4 from "../stockImage4.png";
 import missingPhoto from "../missing-photo.png";
 import kate_cooper from "../kate_cooper.jpeg";
 import dario_ghersi from "../dario_ghersi.jpeg";
 import kiran_bastola from "../kiran_bastola.jpeg";
 import ishwor_thapa from "../ishwor_thapa.jpeg";
 import alphafold from "../alphafold.gif";
-// import SlideShow from "./components/SlideShow";
 
 const slideUp = {
   initial: { opacity: 0, y: 50 },
@@ -229,7 +226,7 @@ const HomePage = () => {
               <Image
                 className="photo"
                 src={member.photo}
-                alt="member photo"
+                alt={`Photo of ${member.name}`}
               ></Image>
               <div className="name">{member.name}</div>
               <div className="role">{member.role}</div>
