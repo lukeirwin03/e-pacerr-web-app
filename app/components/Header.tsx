@@ -44,7 +44,7 @@ const Header = () => {
           <a href="/"><Image src={icon} alt="icon" className="icon"></Image></a>
         </div>
         <div className="spacer"></div>
-        <div className="sidenav-container"><Sidenav /></div>
+        <div className="sidenav-container"><Sidenav/></div>
       </header>
     )
   }

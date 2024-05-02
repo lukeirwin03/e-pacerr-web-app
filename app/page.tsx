@@ -226,7 +226,7 @@ const HomePage = () => {
               <Image
                 className="photo"
                 src={member.photo}
-                alt={`Photo of ${member.name}`}
+                alt={`Photo of ${member.photo ? member.name : "Photo Unavailable"}`}
               ></Image>
               <div className="name">{member.name}</div>
               <div className="role">{member.role}</div>
