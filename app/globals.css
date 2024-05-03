@@ -503,17 +503,17 @@ body.side-nav-open {
 }
 
 .peaks1 {
-  background-image: url("../peaks1.svg");
+  background-image: url("../assets/decoration/peaks1.svg");
 }
 
 .peaks2 {
-  background-image: url("../peaks2.svg");
+  background-image: url("../assets/decoration/peaks2.svg");
 }
 
 .peaks3 {
-  background-image: url("../peaks3.svg");
+  background-image: url("../assets/decoration/peaks3.svg");
 }
 
 .peaks5 {
-  background-image: url("../peaks5.svg");
+  background-image: url("../assets/decoration/peaks5.svg");
 }

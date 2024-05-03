@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import icon from "../../e-pacerr_icon.png";
+import icon from "../../assets/e-pacerr/e-pacerr_icon.png";
 import Sidenav from "./Sidenav"
 
 const Header = () => {

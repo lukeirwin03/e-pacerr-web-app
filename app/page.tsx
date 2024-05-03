@@ -2,14 +2,14 @@
 import Image from "next/image";
 import { SetStateAction, useState, useRef, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
-import stock2 from "../stockImage2.png";
-import stock3 from "../stockImage3.png";
-import missingPhoto from "../missing-photo.png";
-import kate_cooper from "../kate_cooper.jpeg";
-import dario_ghersi from "../dario_ghersi.jpeg";
-import kiran_bastola from "../kiran_bastola.jpeg";
-import ishwor_thapa from "../ishwor_thapa.jpeg";
-import alphafold from "../alphafold.gif";
+import stock2 from "../assets/stock/stockImage2.png";
+import stock3 from "../assets/stock/stockImage3.png";
+import missingPhoto from "../assets/people/missing-photo.png";
+import kate_cooper from "../assets/people/kate_cooper.jpeg";
+import dario_ghersi from "../assets/people/dario_ghersi.jpeg";
+import kiran_bastola from "../assets/people/kiran_bastola.jpeg";
+import ishwor_thapa from "../assets/people/ishwor_thapa.jpeg";
+import alphafold from "../assets/decoration/alphafold.gif";
 
 const slideUp = {
   initial: { opacity: 0, y: 50 },

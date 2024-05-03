@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import logoPic from "../../e-pacerr_logo_negative.png";
+import logoPic from "../../assets/e-pacerr/e-pacerr_logo_negative.png";
 
 const Footer = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
