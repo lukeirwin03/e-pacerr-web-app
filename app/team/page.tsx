@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import stock1 from "../../stockImage1.png";
-import missingPhoto from "../../missing-photo.png";
+import stock1 from "../../assets/stock/stockImage1.png";
+import missingPhoto from "../../assets/people/missing-photo.png";
 import { Content } from "next/font/google";
 
 export const metadata = {

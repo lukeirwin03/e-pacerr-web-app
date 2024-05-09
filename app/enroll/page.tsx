@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import stock1 from "../../stockImage1.png";
+import stock1 from "../../assets/stock/stockImage1.png";
 
 export const metadata = {
   title: "Enroll in the Pilot Study",
