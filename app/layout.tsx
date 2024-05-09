@@ -20,8 +20,8 @@ const robotoSerif = Roboto({
 });
 
 const ubuntuMono = Ubuntu_Mono({
-  weight: [ "400" , "700" ],
-  subsets: [ "latin" ],
+  weight: ["400", "700"],
+  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -36,8 +36,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Header />
-      <body className={openSans.className}>  
+      <body className={openSans.className}>
+        <Header />
         <main className="content">
           {children}
           <Footer />

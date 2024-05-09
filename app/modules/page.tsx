@@ -2,76 +2,76 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import stock1 from "../../stockImage1.png";
 import LoadingScreen from "../loading";
 
 const slideInLeft = {
-  initial: { opacity: 0, x: 50, },
-  animate: ( index : number ) => ({
+  initial: { opacity: 0, x: 50 },
+  animate: (index: number) => ({
     opacity: 1,
     x: 0,
     transition: {
-      delay: .1 * index,
-      duration: .5,
-    }
+      delay: 0.1 * index,
+      duration: 0.5,
+    },
   }),
-}
+};
 
 const slideInRight = {
-  initial: { opacity: 0, x: -50, },
-  animate: ( index : number ) => ({
+  initial: { opacity: 0, x: -50 },
+  animate: (index: number) => ({
     opacity: 1,
     x: 0,
     transition: {
-      delay: .1 * index,
-      duration: .5,
-    }
+      delay: 0.1 * index,
+      duration: 0.5,
+    },
   }),
-}
+};
 
 const slideUp = {
-  initial: { opacity: 0, y: 50, },
-  animate: ( index : number ) => ({
+  initial: { opacity: 0, y: 50 },
+  animate: (index: number) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: .1 * index,
-      duration: .5,
-    }
+      delay: 0.1 * index,
+      duration: 0.5,
+    },
   }),
-}
+};
 
 const modules = [
-  { /* Module 1 */
-    title: "Introducing Reproducibility in Bioinformatics", 
+  {
+    /* Module 1 */ title: "Introducing Reproducibility in Bioinformatics",
     description:
       "This module explores the key principles of the Scientific Method, a fundamental approach used by scientists to conduct research and answer complex questions. Learn how to formulate hypotheses, design experiments, gather and analyze data, and draw meaningful conclusions within the scientific community.",
     learningGoal: "Exploring the Scientific Method",
-    thumbnail: stock1,
+    video_link: "https://unomail-my.sharepoint.com/personal/lukeirwin_unomaha_edu/_layouts/15/embed.aspx?UniqueId=4efaf6d9-cd46-4f59-84ac-f74cdc7cc98c&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create",
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826925",
   },
-  { /* Module 2 */
-    title: "Exploring Reproducibility in Bioinformatics",
+  {
+    /* Module 2 */ title: "Exploring Reproducibility in Bioinformatics",
     description:
       "This material explores reproducibility in bioinformatics, covering topics like using others' code, running software pipelines, and understanding published Methods sections of published papers. Reproducibility involves achieving consistent results across different experiments, locations, and instruments without necessitating new software tools. It's about obtaining consistent outcomes using the same data and code as the original study, applicable to various contexts in bioinformatics, from experimental performance to data management.",
     learningGoal: "How to Identify the Fundamental Tenets of Reproducibility",
-    thumbnail: stock1,
+    video_link: "",
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1811699",
   },
-  { /* Module 3 */
-    title: "Data Management in Bioinformatics",
+  {
+    /* Module 3 */ title: "Data Management in Bioinformatics",
     description:
       "This learning material covers the essentials of reproducibility in bioinformatics, emphasizing the importance of sharing both data and code for replication. It highlights the need for training in ethics, responsible research, and historical context within bioinformatics education, stressing the value of fostering a culture of responsible research. The module also outlines good practices for code and data management, including open access, documentation, licensing, and compliance.",
-    learningGoal: "Identify the Impact of Creating Reproducible Bioinformatics Analyses",
-    thumbnail: stock1,
+    learningGoal:
+      "Identify the Impact of Creating Reproducible Bioinformatics Analyses",
+    video_link: "",
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826932",
   },
-  { /* Module 4 */
-    title: "Code Management in Bioinformatics",
+  {
+    /* Module 4 */ title: "Code Management in Bioinformatics",
     description:
       "This module emphasizes enhancing code accessibility through readability and comprehension, stressing the vital role of clear documentation, comments, and adherence to style guides. It also underscores the value of code sharing for reusability and collaborative efforts, advocating platforms like GitHub and Bitbucket for hosting code repositories that include commented and well-structured code, licenses, README files, and contact information.",
     learningGoal: "Introduction to E-PACERR",
-    thumbnail: stock1,
+    video_link: "",
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826933",
   },
   // { /* Module 5 */
@@ -79,7 +79,7 @@ const modules = [
   //   description:
   //     "Cras adipiscing enim eu turpis egestas. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Proin fermentum leo vel orci. Bibendum ut tristique et egestas quis.",
   //   learningGoal: "What is Bioinformatics?",
-  //   thumbnail: stock1,
+  //   video_link: "",
   //   link: "linkToCanvasModule.com",
   // },
   // { /* Module 6 */
@@ -87,7 +87,7 @@ const modules = [
   //   description:
   //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
   //   learningGoal: "To learn something valuable",
-  //   thumbnail: stock1,
+  //   video_link: "",
   //   link: "linkToCanvasModule.com",
   // },
   // { /* Module 7 */
@@ -95,7 +95,7 @@ const modules = [
   //   description:
   //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
   //   learningGoal: "To learn something valuable",
-  //   thumbnail: stock1,
+  //   video_link: "",
   //   link: "linkToCanvasModule.com",
   // },
   // { /* Module 8 */
@@ -103,7 +103,7 @@ const modules = [
   //   description:
   //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
   //   learningGoal: "To learn something valuable",
-  //   thumbnail: stock1,
+  //   video_link: "",
   //   link: "linkToCanvasModule.com",
   // },
   // { /* Module 9 */
@@ -111,7 +111,7 @@ const modules = [
   //   description:
   //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
   //   learningGoal: "To learn something valuable",
-  //   thumbnail: stock1,
+  //   video_link: "",
   //   link: "linkToCanvasModule.com",
   // },
   // { /* Module 10 */
@@ -119,7 +119,7 @@ const modules = [
   //   description:
   //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
   //   learningGoal: "To learn something valuable",
-  //   thumbnail: stock1,
+  //   video_link: "",
   //   link: "linkToCanvasModule.com",
   // },
   // { /* Module 11 */
@@ -127,7 +127,7 @@ const modules = [
   //   description:
   //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
   //   learningGoal: "To learn something valuable",
-  //   thumbnail: stock1,
+  //   video_link: "",
   //   link: "linkToCanvasModule.com",
   // },
   // { /* Module 12 */
@@ -135,7 +135,7 @@ const modules = [
   //   description:
   //     "Nec feugiat in fermentum posuere urna. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Elit eget gravida cum sociis natoque penatibus et magnis. Sapien eget mi proin sed libero enim sed faucibus turpis. Nam libero justo laoreet sit amet cursus. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Semper eget duis at tellus at urna.",
   //   learningGoal: "To learn something valuable",
-  //   thumbnail: stock1,
+  //   video_link: "",
   //   link: "linkToCanvasModule.com",
   // },
 ];
@@ -173,7 +173,7 @@ const ModulesPage = () => {
     return (
       <div className="content">
         <div className="buffer"></div>
-        
+
         <div className="container">
           <div className="section-separater"></div>
           {modules.map((module, index) => (
@@ -183,7 +183,7 @@ const ModulesPage = () => {
                 variants={index % 2 === 0 ? slideInLeft : slideInRight}
                 initial="initial"
                 whileInView="animate"
-                viewport={{once:true}}
+                viewport={{ once: true }}
                 custom={index}
                 className={
                   index % 2 === 0 ? "module even-module" : "module odd-module"
@@ -191,11 +191,12 @@ const ModulesPage = () => {
               >
                 {index % 2 === 0 ? (
                   <>
-                    <Image
+                    <iframe
                       className="module-thumbnail left"
-                      src={module.thumbnail}
-                      alt={module.title}
-                    />
+                      src={module.video_link}
+                      title={module.title}
+                    ></iframe>
+
                     <div className="module-content right">
                       <h2 className="module-title">{module.title}</h2>
                       <h3 className="module-goal">{module.learningGoal}</h3>
@@ -215,11 +216,11 @@ const ModulesPage = () => {
                         Visit Module on Canvas
                       </a>
                     </div>
-                    <Image
+                    <iframe
                       className="module-thumbnail right"
-                      src={module.thumbnail}
-                      alt={module.title}
-                    />
+                      src={module.video_link}
+                      title={module.title}
+                    ></iframe>
                   </>
                 )}
               </motion.div>
@@ -238,20 +239,21 @@ const ModulesPage = () => {
         <div className="section-separater"></div>
         <div className="container">
           {modules.map((module, index) => (
-            <motion.div 
-            key={index} 
-            variants={slideUp}
-            initial="initial"
-            whileInView="animate"
-            viewport={{once:true}}
-            custom={index}
-            className="module">
+            <motion.div
+              key={index}
+              variants={slideUp}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              custom={index}
+              className="module"
+            >
               <>
-                <Image
+                <iframe
                   className="module-thumbnail left"
-                  src={module.thumbnail}
-                  alt={module.title}
-                />
+                  src={module.video_link}
+                  title={module.title}
+                ></iframe>
                 <div className="module-content right">
                   <h2 className="module-title">{module.title}</h2>
                   <h3 className="module-goal">{module.learningGoal}</h3>
