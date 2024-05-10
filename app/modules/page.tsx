@@ -46,7 +46,7 @@ const modules = [
     description:
       "This module explores the key principles of the Scientific Method, a fundamental approach used by scientists to conduct research and answer complex questions. Learn how to formulate hypotheses, design experiments, gather and analyze data, and draw meaningful conclusions within the scientific community.",
     learningGoal: "Exploring the Scientific Method",
-    video_link: "https://unomail-my.sharepoint.com/personal/lukeirwin_unomaha_edu/_layouts/15/embed.aspx?UniqueId=4efaf6d9-cd46-4f59-84ac-f74cdc7cc98c&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create",
+    video_link: "https://unomaha.yuja.com/V/Video?v=8061738&node=34368070&a=155031686&preload=false",
     link: "https://unomaha.instructure.com/courses/52681/modules/items/1826925",
   },
   {
