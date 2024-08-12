@@ -17,3 +17,7 @@ For more information regarding this process, please see the general documentatio
 3. Open a browser window and go to the URL specified by the Terminal after running the application. By default, this should be `http://localhost:3000`, but the port may be changed if by running the command `PORT=NEW_PORT_NUMBER next start` where `NEW_PORT_NUMBER` is your desired port number.
 
 For more information regarding this process, please see the general documentation for Next.js: https://nextjs.org/learn/basics/create-nextjs-app/setup
+
+# Associated Repository
+- **Statistical Analysis for E-PACERR Feedback:**  
+  [https://github.com/lukeirwin03/epacerr-statistics-app](https://github.com/lukeirwin03/epacerr-statistics-app)
